@@ -1,7 +1,41 @@
+<!-- 
+
+{{champdata}}
+[0] id
+[1] champ name
+[2] champ desc
+[3] champ abilities
+
+{{itemdata}}
+[0] id
+[1] item name
+[2] item desc
+
+-->
+
 {% extends 'layout.html'%}
 {% block content %}
-<h2>{{pizza[1]}}</h2> <p>{{pizza[2]}}</p>
-<p>{{base[0]}}</p>
-<p>{{Toppings[1]}}</p>
+
+<!-- champ info -->
+<div>
+    <h2>{{champdata[1]}}</h2>
+    <h3>{{champdata[2]}}</h3>
+    <h3>{{champdata[3]}}</h3>
+</div>
+<hr>
+<!-- item info -->
+<div>
+    <h2>Champions Items</h2>
+
+    {% for item in itemdata %}
+
+    <div>
+        - {{item[0]}}
+    </div>
+
+    {% endfor %}
+
+</div>
+
 
 {% endblock %}

@@ -27,17 +27,17 @@ def all_champions():
 def viewchampion(id):
    conn=sqlite3.connect('OPGG.db')
    cur = conn.cursor()
-   cur.execute('SELECT * FROM Champions')
-   pizza = cur.fetchone()
+  # cur.execute('SELECT * FROM Champions')
+  # pizza = cur.fetchone()
+
+   cur.execute("SELECT item_name FROM Items WHERE item_id IN(SELECT iid FROM champion_item WHERE cid=?)",(id,))
+   itemdata=cur.fetchall()
    
-   cur.execute("SELECT name FROM Base WHERE id=?",(pizza[4],))
-   base=cur.fetchone()
-   
-   cur.execute("SELECT name FROM Toppings WHERE id IN(SELECT tid FROM PizzaToppings WHERE pid=?)",(id,))
-   toppings=cur.fetchall()
+   cur.execute("SELECT * FROM Champions WHERE champion_id=?",(id,))
+   champdata=cur.fetchone()
 
    
-   return render_template("champion.html", pizza=pizza, base=base, toppings=toppings)
+   return render_template("champion.html", champdata=champdata,itemdata=itemdata)
 
 
 if __name__ == "__main__":
