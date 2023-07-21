@@ -2,14 +2,14 @@
 /**HEADER**/
 body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color : rgb(250, 123, 4);
+    background-color : rgb(71, 144, 253);
     color :white;
     font-size: 20px
 }
 h1{
     padding:20px;
     width:100%;
-    background-color:rgb(248, 144, 47);
+    background-color:rgb(71, 144, 253);
     text-align: center;
 }
 h2 {
