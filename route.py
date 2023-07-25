@@ -30,7 +30,7 @@ def viewchampion(id):
   # cur.execute('SELECT * FROM Champions')
   # pizza = cur.fetchone()
 
-   cur.execute("SELECT item_name FROM Items WHERE item_id IN(SELECT iid FROM champion_item WHERE cid=?)",(id,))
+   cur.execute("SELECT item_name,item_id FROM Items WHERE item_id IN(SELECT iid FROM champion_item WHERE cid=?)",(id,))
    itemdata=cur.fetchall()
    
    cur.execute("SELECT * FROM Champions WHERE champion_id=?",(id,))
