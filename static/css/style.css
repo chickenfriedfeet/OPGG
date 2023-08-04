@@ -26,4 +26,47 @@ title {
     font-size: 20px;
     color :white;
 }
-/**FOOTER**/
+
+.navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #f8f8f8;
+  }
+  
+  .navbar li {
+    margin: 0 15px; 
+  }
+  
+  .navbar li:first-child {
+    margin-left: 0;
+  }
+  
+  .navbar li:last-child {
+    margin-right: 0;
+  }
+  
+  .navbar li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .navbar li a:hover {
+    background-color: #ddd;
+  }
+   
+  a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.header-link {
+    font-size: 40px; 
+    color: white; 
+    text-decoration: none; 
+}

@@ -1,7 +1,12 @@
-{% extends 'layout.html'%}
+{% extends 'layout.html' %}
 {% block content %}
+<br>
+<div class="champion-list">
+    {% for item in results %}
+     <img src="/static/images/champion/{{item[0]}}.jpg" alt="{{item[1]}} Image">
+     <h2><a href="/champion/{{item[0]}}">{{item[1]}}</a></h2>
+     <p>{{item[2]}}</p>
+    {% endfor %}
+</div>
 
-{% for item in results %}
-    <h2><a href= "/champion/{{item[0]}}">{{item[1]}}</a> </h2> <p>{{item[2]}}</p>
-{% endfor %}
 {% endblock %}

@@ -21,7 +21,10 @@
     <h2>{{champdata[1]}}</h2>
     <p>{{champdata[3]}}</p>
 
-<img src="/static/images/champion/{{champdata[0]}}.jpg">
+<img src="/static/images/champion/{{champdata[0]}}.jpg"
+width="300"
+length="300">
+
 
     <h3>{{champdata[2]}}</h3>
 </div>
@@ -30,7 +33,9 @@
 
 <div>
     <h2>Champion's Recommended Items</h2>
- <img src="/static/images/items/{{itemdata[0][1]}}.jpg">
+ <img src="/static/images/items/{{itemdata[0][1]}}.jpg"
+ width="250"
+ length="250">
     {% for item in itemdata %}
    
     <div>
