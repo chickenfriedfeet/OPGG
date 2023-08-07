@@ -1,5 +1,4 @@
-/**GLOBAL**/
-/**HEADER**/
+
 body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color : rgb(71, 144, 253);
@@ -26,7 +25,7 @@ title {
     font-size: 20px;
     color :white;
 }
-
+/**Navbar Links Effects**/
 .navbar {
     list-style: none;
     padding: 0;
@@ -69,4 +68,51 @@ title {
     font-size: 40px; 
     color: white; 
     text-decoration: none; 
+}
+
+/**Formation(5*)**/
+
+.champion-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  margin: 0;
+  padding: 0;
+}
+
+.champion-list a {
+  text-decoration: none;
+  width: calc(20% - 12px);
+  margin: 12;
+  padding: 0;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.champion-list a:hover {
+  transform: scale(1.02);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.champion-list img {
+  max-width: 100%;
+}
+
+.champion-list h2 {
+  margin-top: 7px;
+}
+
+.champion-list p {
+  margin-top: 3px;
+}
+
+.champion-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.champion-list a {
+  text-decoration: none;
+  width: auto;
+  margin-bottom: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
 }

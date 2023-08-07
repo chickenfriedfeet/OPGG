@@ -23,7 +23,7 @@ def all_champions():
    results = cur.fetchall()
    return render_template('all_champions.html', results=results)
 
-@app.route('/champion/<int:id>')
+@app.route('/champion/<id>')
 def viewchampion(id):
    conn=sqlite3.connect('OPGG.db')
    cur = conn.cursor()
