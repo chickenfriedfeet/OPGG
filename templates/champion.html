@@ -33,18 +33,14 @@ length="300">
 
 <div>
     <h2>Champion's Recommended Items</h2>
- <img src="/static/images/items/{{itemdata[0][1]}}.jpg"
- width="250"
- length="250">
     {% for item in itemdata %}
-   
     <div>
-        - {{item[0]}}
+        <img src="/static/images/items/{{item[1]}}.jpg" width="250" height="250">
+        <p>{{item[0]}}</p>
     </div>
-
     {% endfor %}
-
 </div>
+
 
 
 {% endblock %}

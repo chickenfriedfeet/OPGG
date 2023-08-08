@@ -92,10 +92,10 @@ title {
   transform: scale(1.02);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
 .champion-list img {
   max-width: 100%;
 }
+
 
 .champion-list h2 {
   margin-top: 7px;

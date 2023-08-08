@@ -7,7 +7,9 @@
 <div class="champion-list">
     {% for item in results %}
         <a href="/champion/{{item[0]}}">
-            <img src="/static/images/champion/{{item[0]}}.jpg" alt="{{item[1]}} Image">
+            <img src="/static/images/champion/{{item[0]}}.jpg" alt="{{item[1]}} Image"
+            height="200"
+            width="290">
             <h2>{{item[1]}}</h2>
             <p>{{item[2]}}</p>
         </a>
