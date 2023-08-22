@@ -1,0 +1,38 @@
+<!-- 
+
+{{champdata}}
+[0] id
+[1] champ name
+[2] champ desc
+[3] champ abilities
+[4] champ story
+
+{{itemdata}}
+[0] id
+[1] item name
+[2] item desc
+
+-->
+
+{% extends 'layout.html'%}
+{% block content %}
+
+<!-- item info -->
+
+<div> 
+    <h1>{{itemdata[1]}}</h1>  
+    <img src="/static/images/items/{{itemdata[0]}}.jpg" width="400" height="400"> 
+    <h2>{{itemdata[2]}}</h2> 
+    
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+</div>
+
+
+
+{% endblock %}

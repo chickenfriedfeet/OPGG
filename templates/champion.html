@@ -5,6 +5,7 @@
 [1] champ name
 [2] champ desc
 [3] champ abilities
+[4] champ story
 
 {{itemdata}}
 [0] id
@@ -20,23 +21,24 @@
 <div>
     <h2>{{champdata[1]}}</h2>
     <p>{{champdata[3]}}</p>
+    <h3>{{champdata[2]}}</h3>
+    <p>{{champdata[4]}}</p>
 
 <img src="/static/images/champion/{{champdata[0]}}.jpg"
 width="300"
 length="300">
-
-
-    <h3>{{champdata[2]}}</h3>
 </div>
 <hr>
 <!-- item info -->
 
 <div>
     <h2>Champion's Recommended Items</h2>
+    <br>
     {% for item in itemdata %}
     <div>
-        <img src="/static/images/items/{{item[1]}}.jpg" width="250" height="250">
-        <p>{{item[0]}}</p>
+        <h2 href="/items/{{item[1]}}">{{item[0]}}</h2>
+            <a href="/items/{{item[1]}}">
+                <img src="/static/images/items/{{item[1]}}.jpg" width="250" height="250">
     </div>
     {% endfor %}
 </div>

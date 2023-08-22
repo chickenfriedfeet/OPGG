@@ -3,15 +3,15 @@
 {% extends 'layout.html' %}
 {% block content %}
 <br>
-
+<h1>All Champions</h1>
 <div class="champion-list">
-    {% for item in results %}
-        <a href="/champion/{{item[0]}}">
-            <img src="/static/images/champion/{{item[0]}}.jpg" alt="{{item[1]}} Image"
+    {% for champion in results %}
+        <a href="/champion/{{champion[0]}}">
+            <img src="/static/images/champion/{{champion[0]}}.jpg" alt="{{champion[1]}} Image"
             height="200"
             width="290">
-            <h2>{{item[1]}}</h2>
-            <p>{{item[2]}}</p>
+            <h2>{{champion[1]}}</h2>
+            <p>{{champion[2]}}</p>
         </a>
         
     {% endfor %}
