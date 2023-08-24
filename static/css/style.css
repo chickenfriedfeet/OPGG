@@ -55,7 +55,7 @@ title {
   }
   
   .navbar li a:hover {
-    background-color: #ddd;
+    background-color: rgb(126, 126, 126);
   }
    
   a {
@@ -69,6 +69,10 @@ title {
     color: white; 
     text-decoration: none; 
 }
+.navbar li a.active {
+  background-color: rgb(126, 126, 126); 
+  color: #333;
+}
 
 /**Formation(5*)**/
 
@@ -79,15 +83,6 @@ title {
   margin: 0;
   padding: 0;
 }
-
-.champion-list a {
-  text-decoration: none;
-  width: calc(20% - 12px);
-  margin: 12;
-  padding: 0;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
 .champion-list a:hover {
   transform: scale(1.02);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -95,24 +90,23 @@ title {
 .champion-list img {
   max-width: 100%;
 }
-
-
+.champion-list img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 .champion-list h2 {
   margin-top: 7px;
 }
-
 .champion-list p {
   margin-top: 3px;
 }
-
 .champion-list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.champion-list a {
-  text-decoration: none;
-  width: auto;
-  margin-bottom: 20px;
-  transition: transform 0.3s, box-shadow 0.3s;
+/**Item image hover effect on champions page**/
+.item-list img:hover{
+  transform: scale(1.02);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }

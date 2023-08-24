@@ -35,7 +35,7 @@ length="300">
     <h2>Champion's Recommended Items</h2>
     <br>
     {% for item in itemdata %}
-    <div>
+    <div class="item-list">
         <h2 href="/items/{{item[1]}}">{{item[0]}}</h2>
             <a href="/items/{{item[1]}}">
                 <img src="/static/images/items/{{item[1]}}.jpg" width="250" height="250">
