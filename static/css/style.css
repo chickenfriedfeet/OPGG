@@ -74,39 +74,69 @@ title {
   color: #333;
 }
 
-/**Formation(5*)**/
+/**Formation(5*)for champion list**/
 
 .champion-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; 
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 5px; 
   margin: 0;
   padding: 0;
 }
+
 .champion-list a:hover {
   transform: scale(1.02);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .champion-list img {
   max-width: 100%;
 }
+
 .champion-list img:hover {
   transform: scale(1.02);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .champion-list h2 {
   margin-top: 7px;
 }
+
 .champion-list p {
   margin-top: 3px;
 }
-.champion-list {
-  display: flex;
-  flex-wrap: wrap;
+
+.champion-list::after {
+  content: "";
+  grid-column: span 2; /
+  margin-left: auto;
 }
 
 /**Item image hover effect on champions page**/
-.item-list img:hover{
+.item-list img:hover {
   transform: scale(1.02);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/**all items page formation**/
+.allitem-list {
+  display: grid;
+  grid-template-columns: repeat(6, 16.6%);
+  grid-gap: 20px; 
+}
+.allitem-list a:hover {
+  transform: scale(1.02);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.allitem-list img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.allitem-list h2 {
+  font-size: 20px;
+  margin-top: 7px;
+  white-space: nowrap; 
+  text-overflow: ellipsis; 
 }

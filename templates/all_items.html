@@ -1,34 +1,15 @@
-<!-- 
-
-{{champdata}}
-[0] id
-[1] champ name
-[2] champ desc
-[3] champ abilities
-[4] champ story
-
-{{itemdata}}
-[0] id
-[1] item name
-[2] item desc
-
--->
-
 {% extends 'layout.html'%}
 {% block content %}
-
-<!-- item info -->
-<div class="champion-list">
-    <h1>All Items</h1>
-    <br>
+<br>
+<h1>All Items</h1>
+<div class="allitem-list">
     {% for item in itemdata %}
-    <div>
-    <a href="/items/{{item[0]}}">
-        <img src="/static/images/items/{{item[0]}}.jpg" width="230" height="230">
-    </div>
+        <a href="/items/{{item[0]}}">
+          <img src="/static/images/items/{{item[0]}}.jpg" 
+          width="200" 
+          height="200">
+          <h2>{{item[1]}}</h2>
+        </a>
     {% endfor %}
 </div>
-
-
-
 {% endblock %}
