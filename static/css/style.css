@@ -1,4 +1,4 @@
-
+/**background and text**/
 body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color : rgb(71, 144, 253);
@@ -74,7 +74,7 @@ title {
   color: #333;
 }
 
-/**Formation(5*)for champion list**/
+/**Formation(6*)for champion list**/
 
 .champion-list {
   display: grid;
